@@ -8,6 +8,7 @@ AppDataTransferConfig.h içinde yer alan tanımlamalar ile ayar yapabilirsiniz.B
  - IS_DATATRANMISSION_LOGI_ENABLE: Terminale bilgilendirme yazılarını aktif veya pasif etmek için kullanılır.
  - DEVICE_NAME: Cİhazın Bluetooth adını belirler.
  - BLE_RX_QUEUE_LENGTH: Bluetooth okunan verileri bir kuyruğa ekler ve main fonksiyonunda o kuyruktan okunmasını bekler. Bu değişken o kuyruğun uzunluğunu belirtir. Yani son kaç frame bluetooth verisinin hafızada tutulacağını belirler. 
+ 
  Eğer başka bir projede bleutoothtan veri okuma ve yazma için kullanacaksanız main dosyanızda bir task oluşturup o taskte kuyruğu kontrol ederek bluetoothtan gelen verileri okuyabilirsiniz.Okurken kuyruktaki veri tipi AppDataTransfer.h dosyasındaki "BleRxData" yapısıdır. Yazmak için ise "AppDataTransfer_BleSendData(BleTxData)" fonksiyonu ile yazabilirsiniz. "BleTxData" AppDataTransfer.h dosyasında tanımlanmış bir yapıdır. Bu yapıyı kullanarak veri yazabilirsiniz.
 ### LedDriver
 LedDriverConfig.h içinde yer alan tanımlamalar ile ayar yapabilirsiniz.Bunlar;
